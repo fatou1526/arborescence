@@ -5,16 +5,15 @@ from git import Repo
 
 def creer_arborescence3():
     # Créer les répertoires 
-    #Path('data/cleaned').mkdir(parents=True, exist_ok=True)
-    Path('data/raw').mkdir(parents=True, exist_ok=True)
-    Path('docs').mkdir(parents=True, exist_ok=True)
-    Path('models').mkdir(parents=True, exist_ok=True)
-    Path('notebooks').mkdir(parents=True, exist_ok=True)
-    Path('reports').mkdir(parents=True, exist_ok=True)
-    Path('src').mkdir(parents=True, exist_ok=True)
+    Path('data/cleaned').write_text('Vos cleaned données')
+    #Path('data/raw').write_text("Vos raw data")
+    Path('docs').write_text("Vos documents")
+    Path('models').write_text("Vos modeles")
+    Path('notebooks').write_text("Vos notebooks")
+    Path('reports').write_text("Vos rapports")
+    Path('src').write_text("Vos fonctions sources")
 
     # Créer les files
-    Path('data/cleaned').write_text('Vos données')
 
     Path('LICENSE').write_text('Votre license')
 
